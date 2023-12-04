@@ -7,13 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('gpaForm');
     const avgGPAInput = document.getElementById('avgGPA');
 
-	 
-  const inputField = document.getElementById("myInput");
-
-  inputField.addEventListener("keyup", function(event) {
-    event.preventDefault();
-    inputField.value = inputField.value.toUpperCase();
-  }); 
+	
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -37,16 +31,20 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check if at least 3 courses are entered
         if (credits.length < 3 || grades.length < 3) {
             alert('Please enter valid values for at least three courses.');
+			console.log("console")
             return;
         }
+		else{
+  // Calculate GPA
+  const totalCredits = credits.reduce((acc, val) => acc + val, 0);
+  const weightedGPA = credits.reduce((acc, val, index) => acc + val * grades[index], 0);
+  const averageGPA = weightedGPA / totalCredits;
 
-        // Calculate GPA
-        const totalCredits = credits.reduce((acc, val) => acc + val, 0);
-        const weightedGPA = credits.reduce((acc, val, index) => acc + val * grades[index], 0);
-        const averageGPA = weightedGPA / totalCredits;
+  // Display result in the average GPA box
+  avgGPAInput.value = averageGPA.toFixed(2);
+		}
 
-        // Display result in the average GPA box
-        avgGPAInput.value = averageGPA.toFixed(2);
+      
     });
 
     form.addEventListener('reset', function () {

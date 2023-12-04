@@ -6,15 +6,15 @@
 }
 
 body {
-    background-image: url('../images/aum3.jpg'); /* Replace 'your-image-url.jpg' with the actual path to your image */
-    background-size: cover; /* Ensure the background image covers the entire viewport */
-    background-position: center; /* Center the background image */
+    background-image: url('../images/aum3.jpg'); 
+    background-size: cover;  
+    background-position: center; 
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box; /* Include padding and border in width calculation */
-    margin: 0 auto; /* Center the content */
+    box-sizing: border-box; 
+    margin: 0 auto;  
     margin-bottom: 10%;
-    max-width: 1000px; /* Set the maximum width */
+    max-width: 1000px; 
     
 }
 
@@ -22,8 +22,8 @@ footer {
     background-color: rgb(255, 81, 0);
     padding: 15px;
     color: #0b0b0b;
-    box-sizing: border-box; /* Include padding and border in width calculation */
-    margin: 0px auto; /* Center the content and add some space at the top */
+    box-sizing: border-box;  
+    margin: 0px auto;  
     max-width: 1000px;
     border-right: 3px solid black;
     border-bottom: 3px solid black;
@@ -67,7 +67,7 @@ footer img {
     margin: 0;
     padding: 0;
     background-color: black; 
-    display: flex; /* Use flexbox to make it responsive */
+    display: flex;  
 }
 
 .navbar li
@@ -85,8 +85,8 @@ footer img {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    width: 100%; /* Take up the entire width */
-    box-sizing: border-box; /* Include padding and border in width */
+    width: 100%;  
+    box-sizing: border-box; 
 }
 
 .navbar .active {
