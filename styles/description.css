@@ -17,30 +17,6 @@ body {
     max-width: 1000px; /* Set the maximum width */
 }
 
-footer {
-    background-color: rgb(255, 81, 0);
-    padding: 20px;
-    color: #0b0b0b;
-    box-sizing: border-box; /* Include padding and border in width calculation */
-    margin: 0px auto; /* Center the content and add some space at the top */
-    max-width: 1000px;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
-}
-
-footer img {
-    height: 30px;
-    width: 30px;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
 
 .leftside {
     float: left;
@@ -99,6 +75,33 @@ footer img {
     background-color: #040404;
     color: rgb(250, 127, 27);
 }
+
+
+footer {
+    background-color: rgb(255, 81, 0);
+    padding: 20px;
+    color: #0b0b0b;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    margin: 0px auto; /* Center the content and add some space at the top */
+    max-width: 1000px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
 
 .column {
     flex: 1;
